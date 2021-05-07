@@ -5,12 +5,14 @@ import { convertDurationToTimeString } from "../../utils/convertDurationToTimeSt
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link"
+import Head from "next/head";
 
 import { api } from "../../services/api";
 
 import styles from "./episode.module.scss";
 import { useContext } from "react";
 import { PlayerContext } from "../../contexts/PlayerContext";
+
 
 type Episode = {
   id: string;
@@ -34,6 +36,10 @@ export default function Episode({ episode }: EpisodeProps) {
 
   return (
     <div className={styles.episode}>
+      <Head>
+        <title>{episode.title} | Podcastr</title>
+      </Head>
+
       <div className={styles.thumbnailContainer}>
           <Link href="/">
             <button type="button">
