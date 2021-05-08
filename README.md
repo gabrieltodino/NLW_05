@@ -12,7 +12,7 @@ But it also includes the NextJs framework, and TypeScript.
 
 ## Running locally in development mode
 
-To get started, just clone the repository and run `npm install && npm run dev`:
+To get started, just clone the repository and run `npm install && npm run server && npm run dev`:
 
     git clone https://github.com/gabrieltodino/NLW_05.git
     npm install
@@ -22,7 +22,7 @@ To get started, just clone the repository and run `npm install && npm run dev`:
 
 ## Building in production
 
-If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
+If you wanted to run this site in production, you should install modules then start the fake server with `npm run server` after build the site with `npm run build` and run it with `npm start`:
 
     npm install
     npm run server
