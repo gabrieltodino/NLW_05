@@ -1,4 +1,4 @@
-## [Podcastr - NLW 05](https://moveit-nlw-rust.vercel.app)
+## Podcastr - NLW 05
 
 Project developed during a free workshop, by rocketseat. The project basically is a podcast platform.<br/>
 With a complet episode controls(shuffle, loop, next and previous), and dinamic pages per episode.<br/><br/>
@@ -16,6 +16,7 @@ To get started, just clone the repository and run `npm install && npm run dev`:
 
     git clone https://github.com/gabrieltodino/NLW_05.git
     npm install
+    npm run server
     npm run dev
 
 
@@ -24,6 +25,7 @@ To get started, just clone the repository and run `npm install && npm run dev`:
 If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
 
     npm install
+    npm run server
     npm run build
     npm start
 
